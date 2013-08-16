@@ -5,7 +5,6 @@ by
  Tinitiate.com
  Venkata Bhattaram
 
-
 JSP [Java Server Pages]
 
 Topics Covered
