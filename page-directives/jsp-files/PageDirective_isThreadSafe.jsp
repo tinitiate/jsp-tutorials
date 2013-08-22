@@ -1,6 +1,7 @@
 <!--  
 @AUTHOR     Tinitiate.com
 @TOPIC      JSP Page Directives
+@FILE-NAME  PageDirective_isThreadSafe.jsp
 @GROUP-CODE 
 @NOTES      1) In a JSP page the "Page Directives" instructs how 
                to handle various aspects of JSP processing.
