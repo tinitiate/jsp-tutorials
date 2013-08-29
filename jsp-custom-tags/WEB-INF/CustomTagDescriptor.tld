@@ -1,0 +1,78 @@
+<taglib>
+    <!-- ======================   -->    
+    <!-- CustomTagDescriptor.tld  -->
+    <!-- ======================   -->
+<tlibversion>1.0</tlibversion>
+<jspversion>1.1</jspversion>
+
+
+    <!-- ====================== -->    
+    <!-- TAG DateBox            -->
+    <!-- ====================== -->
+	<tag>
+	    <name>DateBox</name>
+	    <!-- The Java class that handles this tag -->
+        <!-- #################################### -->
+	    <tagclass>tinitiatejsp.TinitiateJSPCustomTagsSKIP_BODY</tagclass>
+	    <info>
+	        This Tag prints the Sysdate in a BOX
+	        with the specified border size and color.
+	    </info>
+        <bodycontent>JSP</bodycontent>
+	    <!-- Optional attributes  -->
+	    <!-- This Attribute specifies the table Border -->
+	    <attribute>
+	      <name>tableBorder</name>
+	      <required>false</required> 
+	    </attribute>
+	    <!-- This Attribute specifies the Background Color -->
+	    <attribute>
+	      <name>cellColor</name>
+	      <required>false</required> 
+	    </attribute>
+	</tag>
+
+    <!-- ====================== -->    
+    <!-- TAG IterativePrinter   -->
+    <!-- ====================== -->
+    <tag>
+        <name>IterativePrinter</name>
+        <!-- The Java class that handles this tag -->
+        <!-- #################################### -->
+        <tagclass>tinitiatejsp.TinitiateJSPCustomTagsEVAL_BODY_INCLUDE</tagclass>
+        <info>
+            This Tag prints the Body text of the tag
+            as many times as the number specified in the 
+            tag attribute "printIterations"
+        </info>
+        <bodycontent>JSP</bodycontent>        
+        <!-- This Attribute specifies the number of iterations
+             to print the Tag Body text  -->
+        <attribute>
+          <name>printIterations</name>
+          <required>true</required> 
+        </attribute>
+    </tag>
+
+    <!-- ====================== -->    
+    <!-- TAG DoTAGdemo          -->
+    <!-- ====================== -->
+    <tag>
+        <name>DoTAGdemo</name>
+        <!-- The Java class that handles this tag -->
+        <!-- #################################### -->
+        <tag-class>tinitiatejsp.TinitiateJSPCustomTag_doTag</tag-class>
+	        <info>
+	            This Tag prints the Body text of the tag
+	            CUSTOM Tag using the doTag, Captures the 
+	            TEXT between the Tag start and End is  used 
+	            for processing  And the Attributes.
+	        </info>
+        <bodycontent>scriptless</bodycontent>	        
+        <!-- This is the Name of the Tag Attribute -->
+        <attribute>
+          <name>tagAttributeValue</name>
+          <required>true</required>
+        </attribute>
+    </tag>
+</taglib>
